@@ -7,7 +7,7 @@ html {
 .hero {
     height: 520px;
     background-position: center top;
-    background-image: url("photo/hero.png");
+    background-image: url(../photo/hero.png);
     background-size: auto;
 }
 .site-header-color {
@@ -38,12 +38,12 @@ html {
     font-size: 16px;
     color: #0c4a6e;
     line-height: 15px;
-    max-width: 50%;
+    max-width: 70%;
     font-weight: 500; 
     line-height: 18px;
 }   
 .content {
-    padding-top: 20px;
+    padding-top: 150px;
 }
 .hero-title-color {
     color: var(--secondary-color);
@@ -194,7 +194,7 @@ html {
 .office {
     height: auto;
     background-position: center top;
-    background: linear-gradient(to right, transparent 0, rgba(240, 249, 255, 0.8) 0), url("photo/map-background.png");
+    background: linear-gradient(to right, transparent 0, rgba(240, 249, 255, 0.8) 0), url("../photo/map-background.png");
     background-size: auto;
     padding-bottom: 30px;
 }
@@ -322,9 +322,6 @@ html {
     .reviews-title {
         font-size: 24px;
     }
-    .content {
-        padding-top: 150px;
-    }
 }
 @media (min-width: 1024px) {
     .name-navigation {
@@ -358,8 +355,7 @@ html {
         width: 50%;
     }
     .office-block {
-        flex-direction: row;
-        
+        flex-direction: row; 
     }
     .office-text {
         width: calc((100% - 10px * 2) / 3);
@@ -405,5 +401,8 @@ html {
     .arrow {
         display: flex;
         align-items: center;
-    }   
+    } 
+    .hero-text {
+        max-width: 50%;
+    }  
 }    

@@ -7,7 +7,7 @@ html {
 .hero {
     height: 520px;
     background-position: center top;
-    background-image: url("photo/hero.png");
+    background-image: url(../photo/hero.png);
     background-size: auto;
 }
 .site-header-color {
@@ -38,12 +38,12 @@ html {
     font-size: 16px;
     color: #0c4a6e;
     line-height: 15px;
-    max-width: 50%;
+    max-width: 70%;
     font-weight: 500; 
     line-height: 18px;
 }   
 .content {
-    padding-top: 20px;
+    padding-top: 150px;
 }
 .hero-title-color {
     color: var(--secondary-color);
@@ -68,19 +68,20 @@ html {
     padding-right: 10px;
 }
 .caries-title {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 22px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    font-size: 28px;
     font-weight: 700;
     color: #0369a1;
 }
 .caries-text {
-    padding-bottom: 30px;
     font-size: 18px;
     font-weight: 400;
     text-align: justify;
-    color: #171717;
+    color: #0B4269;
     line-height: 25px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .caries-photo {
     border-radius: 20px;
@@ -90,11 +91,11 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
 }
 .caries-price {
-    margin-top: 50px;
-    margin-bottom: 30px;
+    margin-top: 100px;
+    margin-bottom: 50px;
     text-align: center;
     font-size: 22px;
     font-weight: 700;
@@ -127,6 +128,7 @@ html {
 .service {
     background-color: var(--secondary-color);
     padding: 40px 0px 30px 0px;
+    margin-bottom: 80px;
 }
 .service-image {
     border-radius: 20px;
@@ -215,4 +217,106 @@ html {
     color: var(--primary-color);
     line-height: 25px;
     font-weight: 400;
+}
+.license {
+    display: flex;
+    justify-content: flex-end;
+}    
+@media (min-width: 600px) {
+    .name-navigation {
+        font-size: 18px;
+    }
+    .hero-title {
+        font-size: 36px;
+    }
+    .hero-title-color {
+        font-size: 36px;
+    }
+    .service-title {
+        font-size: 30px;
+    }
+    .caries-price {
+        font-size: 30px;
+    }
+}
+@media (min-width: 1024px) {
+    .name-navigation {
+        font-size: 22px;
+    }
+    .hero-title {
+        font-size: 56px;
+    }
+    .hero-title-color {
+        font-size: 56px;
+    }
+    .hero-button {
+        font-size: 18px;
+    }
+    .service-title {
+        font-size: 40px;
+    }
+    .contact-net {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-width {
+        max-width: 50%;
+    }
+    .e-mail {
+        display: flex;
+        justify-content: space-between;
+    }
+    .width {
+        max-width: 1024px;
+        margin: 0 auto;
+    }
+    .width1024 {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1024px;
+        margin: 0 auto;
+    } 
+    .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: 30px solid transparent;
+        border-right: 20px solid var(--third-color);
+        border-bottom: 30px solid transparent;
+    }
+    .triangle-right {
+        width: 0;
+        height: 0;
+        border-top: 30px solid transparent;
+        border-left: 20px solid var(--third-color);
+        border-bottom: 30px solid transparent;
+    }
+    .arrow {
+        display: flex;
+        align-items: center;
+    }   
+    .hero-text {
+        max-width: 50%;
+    }
+    .caries-text {
+        font-size: 19px;
+        line-height: 30px;
+    }
+    .caries-block {
+        flex-direction: row;
+    }
+    .caries-photo {
+        max-width: none;
+    }
+    .caries-title {
+        font-size: 48px;
+    }
+    .caries-text-margin {
+        margin-right: 20px;
+    }
+    .caries-price {
+        font-size: 40px;
+    }
+    .service {
+        margin-bottom: 150px;
+    }
 }
