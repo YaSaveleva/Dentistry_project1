@@ -64,6 +64,7 @@ input {
     background-size: 30px;
     background-position: 25px 13px;
     background-color: #E0F2FE;
+    cursor: pointer;
 }
 .search {
     max-width: 100%;
@@ -117,7 +118,11 @@ input:focus {
     border-radius: 10px;
     margin-top: 10px;
     color: #0284C7;
+    cursor: pointer;
 }
+.doctor-botton:hover {
+    background-color:#E0F2FE;
+}    
 .contacts {
     background-color: #f0f9ff;
     padding-top: 50px;
@@ -166,6 +171,9 @@ input:focus {
         margin-left: 10px;
         margin-right: 10px;
     }
+    .name-navigation {
+        font-size: 18px;
+    }
 }
 @media (min-width: 1024px) {
     .width {
@@ -189,5 +197,8 @@ input:focus {
     .e-mail {
         display: flex;
         justify-content: space-between;
+    }
+    .name-navigation {
+        font-size: 22px;
     }
 }
